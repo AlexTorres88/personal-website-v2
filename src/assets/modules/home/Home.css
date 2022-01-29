@@ -1,7 +1,7 @@
 /* Top container */
 
 .top-container-wrapper {
-    background: linear-gradient(.35turn, rgb(27, 6, 148), rgb(11, 13, 128), rgb(37, 14, 121), rgb(58, 16, 126));
+    background: linear-gradient(to right, #531c86, #3208a7);
     min-height: 450px;
     max-height: 500px;
     display: flex;

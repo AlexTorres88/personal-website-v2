@@ -25,7 +25,8 @@ function InfoIconModal(props) {
             <ModalHeader>{props.title}</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
-                {props.body}
+                <img src={props.img} style={{height: props.height, width: props.width}}/>
+                <p>{props.body}</p>
             </ModalBody>
             <ModalFooter>
                 <Button onClick={onClose}>Close</Button>

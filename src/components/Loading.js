@@ -1,5 +1,5 @@
 import React from 'react';
-import Konfio from '../assets/WorkExperience/konfio-logo.jpg'
+import Konfio from '../assets/WorkExperience/konfio-logo.png'
 
 const Loading = () => {
     return (
