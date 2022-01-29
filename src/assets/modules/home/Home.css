@@ -1,0 +1,76 @@
+/* Top container */
+
+.top-container-wrapper {
+    background: linear-gradient(.35turn, rgb(27, 6, 148), rgb(11, 13, 128), rgb(37, 14, 121), rgb(58, 16, 126));
+    min-height: 450px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container-title-wrapper {
+    text-align: center;
+}
+
+.top-container-title {
+    color: rgb(255, 255, 255);
+    min-width: 250px;
+    max-width: 650px;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+.highlight-text {
+    background-color: black;
+    padding: 2px 4px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .top-container-title {
+        font-size: 3rem;
+    }
+}
+
+/* Middle container */
+
+.profile-pic {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mc-first-wrapper {
+    background-color: white;
+    text-align: justify;
+    margin: 0px 15px;
+    padding: 25px 0;
+}
+
+.mc-first-title {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.mc-first-desc {
+    min-width: 280px;
+    max-width: 550px;
+    margin: 10px auto;
+    font-size: 1.5rem;
+}
+
+.mc-second-wrapper {
+    min-height: 450px;
+    max-height: 500px;
+    background-color: black;
+}
+
+.resume-wrapper {
+    height: 100vh;
+}

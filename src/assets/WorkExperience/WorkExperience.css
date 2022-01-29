@@ -1,0 +1,75 @@
+.work-exp-container {
+    text-align: center;
+}
+
+.work-exp-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 450px;
+    color: #313149;
+    padding: 10px;
+    position:relative;
+    z-index:0;
+  }
+  .work-exp-item:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 4px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #531c86, #3208a7);
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+            mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  
+  }
+
+.work-exp-desc {
+    font-size: 1.3rem;
+}
+
+.work-exp-desc span {
+    font-weight: 800;
+}
+
+.work-exp-desc span:hover {
+    color: #6e43b7;
+}
+
+.work-exp-date {
+    color: rgb(136, 131, 131);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.btn-resume {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #531c86, #3208a7);
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.circle {
+    margin: 2px 0;
+}
+
+.info {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0 10px 10px 0;
+}
