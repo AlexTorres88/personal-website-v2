@@ -1,0 +1,24 @@
+.footer-wrapper {
+    height: 180px;
+    background-color: black;
+    text-align: center;
+}
+
+.social-links-wrapper {
+    display: flex;
+    min-width: 280px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.social-links-wrapper div {
+    margin: 0 auto;
+}
+
+.footer-copyright {
+    margin-top: 30px;
+    color: white;
+    font-weight: 900;
+    font-size: large;
+}

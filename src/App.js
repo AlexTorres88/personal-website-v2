@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import { CssBaseline } from '@material-ui/core'
 import Loading from "./components/Loading";
 
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/resume" element={<Resume/>}/>
                 </Routes>
             </Suspense>
+            <Footer />
         </BrowserRouter>
     );
 }

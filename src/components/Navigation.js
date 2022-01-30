@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, Text, Box, Stack, Flex, Button } from "@chakra-ui/react";
 import MenuToggle from './MenuToggle'
 import Logo from './Logo';
+import '../assets/components/Navigation.css'
 
 const Navigation = (props) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -23,8 +24,8 @@ const Navigation = (props) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
-        <Link href={to}>
-            <Text display="block" {...rest}>
+        <Link  className="link-text" href={to}>
+            <Text display="block" fontWeight="bold" {...rest}>
                 {children}
             </Text>
         </Link>
