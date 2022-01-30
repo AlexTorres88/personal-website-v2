@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkExperience from '../../components/WorkExperience';
 import FotoPerfil from '../../assets/modules/home/foto-perfil.jpeg'
+import ContactCard from '../../components/ContactCard';
 
 const MiddleContainer = () => {
     return (
@@ -15,6 +16,9 @@ const MiddleContainer = () => {
             </div>
             <div className="mc-second-wrapper">
 
+            </div>
+            <div className="mc-contact-wrapper">
+                <ContactCard />
             </div>
             
         </section>

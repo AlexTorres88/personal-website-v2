@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="footer-wrapper">
             <div className="social-links-wrapper">
-                <IconLink link="https://www.linkedin.com/in/diego-alejandro-torres-cruz/" icon={<LinkedInIcon sx={{fontSize: 50, color: 'rgb(25, 118, 210)'}}/>} />
+                <IconLink link="https://www.linkedin.com/in/diego-alejandro-torres-cruz/" icon={<LinkedInIcon sx={{fontSize: 50, color: 'white'}}/>} />
                 <IconLink link="https://www.github.com/AlexTorres88" icon={<GitHubIcon sx={{fontSize: 50, color: 'white'}}/>} />
             </div>
             <p className="footer-copyright">Alex Torres © 2022</p>

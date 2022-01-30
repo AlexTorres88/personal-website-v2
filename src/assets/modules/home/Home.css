@@ -59,7 +59,7 @@
 }
 
 .mc-first-desc {
-    min-width: 280px;
+    min-width: 260px;
     max-width: 550px;
     margin: 10px auto;
     font-size: 1.5rem;
@@ -71,6 +71,18 @@
     background-color: black;
 }
 
+.mc-contact-wrapper {
+    background-image: linear-gradient(to right, rgb(33, 202, 98),rgb(31, 88, 211));
+    text-align: center;
+    padding: 5%;
+}
+
 .resume-wrapper {
     height: 100vh;
+}
+
+@media only screen and (min-width: 300px) {
+    .mc-contact-wrapper {
+        padding: 40px;
+    }
 }
