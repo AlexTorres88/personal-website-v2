@@ -54,7 +54,8 @@ const MenuLinks = ({ isOpen }) => {
                         color={"black"}
                         bg={"white"}
                         _hover={{
-                            bg: ["white", "white", "white", "white"]
+                            bg: ["primary.100"],
+                            color: "white"
                         }}
                     >
                         Contact

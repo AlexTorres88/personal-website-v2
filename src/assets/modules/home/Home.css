@@ -1,7 +1,7 @@
 /* Top container */
 
 .top-container-wrapper {
-    background: linear-gradient(to right, #531c86, #3208a7);
+    background: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
     min-height: 450px;
     max-height: 500px;
     display: flex;
@@ -72,7 +72,7 @@
 }
 
 .mc-contact-wrapper {
-    background-image: linear-gradient(to right, rgb(33, 202, 98),rgb(31, 88, 211));
+    background-image: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
     text-align: center;
     padding: 5%;
 }
