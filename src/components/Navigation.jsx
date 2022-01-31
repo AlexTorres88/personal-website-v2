@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link, Text, Box, Stack, Flex, Button } from "@chakra-ui/react";
+import { Text, Box, Stack, Flex, Button } from "@chakra-ui/react";
+import { HashLink } from 'react-router-hash-link';
 import MenuToggle from './MenuToggle'
 import Logo from './Logo';
 import '../assets/components/Navigation.css'
@@ -24,11 +25,11 @@ const Navigation = (props) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
-        <Link  className="link-text" href={to}>
+        <HashLink smooth  className="link-text" to={to}>
             <Text display="block" fontWeight="bold" {...rest}>
                 {children}
             </Text>
-        </Link>
+        </HashLink>
     );
 };
 
@@ -45,9 +46,10 @@ const MenuLinks = ({ isOpen }) => {
                 direction={["column", "row", "row", "row"]}
                 pt={[4, 4, 0, 0]}
             >
-                <MenuItem to="/">Home</MenuItem>
-                <MenuItem to="/about">About </MenuItem>
-                <MenuItem to="/contact" isLast>
+                <MenuItem to="#">Home</MenuItem>
+                <MenuItem to="#about">About </MenuItem>
+                <MenuItem to="#projects">Projects </MenuItem>
+                <MenuItem to="#contact" isLast>
                     <Button
                         size="sm"
                         rounded="md"

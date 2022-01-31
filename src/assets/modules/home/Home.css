@@ -3,7 +3,6 @@
 .top-container-wrapper {
     background: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
     min-height: 450px;
-    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +66,15 @@
 
 .mc-second-wrapper {
     min-height: 450px;
-    max-height: 500px;
     background-color: black;
+    text-align: center;
+}
+
+.mc-second-title {
+    padding-top: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .mc-contact-wrapper {
