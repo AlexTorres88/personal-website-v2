@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
             <div className="image-container">
                 {props.icons.map((image) => {
                     return (
-                        <img alt="technology-logo" src={image[0]} style={{height: image[1], width: image[0]}}/>
+                        <img key={image} alt="technology-logo" src={image[0]} style={{height: image[1], width: image[0]}}/>
                     );
                 })}
             </div>

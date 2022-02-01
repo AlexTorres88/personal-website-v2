@@ -1,19 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Text, Box, Stack, Flex, Button } from "@chakra-ui/react";
 import { HashLink } from 'react-router-hash-link';
+import useHideOnScroll from '../hooks/useHideOnScroll'
 import MenuToggle from './MenuToggle'
 import Logo from './Logo';
 import '../assets/components/Navigation.css'
 
+
 const Navigation = (props) => {
+    const isHidden = useHideOnScroll();
     const [isOpen, setIsOpen] = useState(false)
-   
+    const [navbar, setNavbar] = useState(false)
+
     const toggle = () => setIsOpen(!isOpen)
+
+    const changeBackground = () => {
+        if (window.scrollY >= 60) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    useEffect(() => {
+        changeBackground()
+        window.addEventListener("scroll", changeBackground)
+        return () => {
+            window.removeEventListener("scroll", changeBackground);
+        };
+    })
 
       
     return (
-        <nav className="navbar">
-            <div className="nav-line"></div>
+        isHidden ? <div></div> :
+        <nav className={navbar ? "navbar" : "navbar-active"}>
+            {navbar ? <div className="nav-line"></div> : <div></div>}
             <NavBarContainer {...props}>
                 <Logo
                     w="100px"
@@ -79,8 +100,6 @@ const NavBarContainer = ({ children, ...props }) => {
             wrap="wrap"
             w="100%"
             p={6}
-            bg={["black", "black", "black", "black"]}
-            color={["white", "white", "white", "white"]}
             {...props}
         >
             {children}
