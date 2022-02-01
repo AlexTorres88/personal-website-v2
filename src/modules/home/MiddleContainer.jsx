@@ -2,7 +2,7 @@ import React from 'react';
 import WorkExperience from '../../components/WorkExperience';
 import FotoPerfil from '../../assets/modules/home/foto-perfil.jpeg'
 import ContactCard from '../../components/ContactCard';
-import ProjectCard from '../../components/ProjectCard';
+import Projects from './Projects';
 
 const MiddleContainer = () => {
     return (
@@ -17,6 +17,7 @@ const MiddleContainer = () => {
             </div>
             <div id="projects" className="mc-second-wrapper">
                 <h1 className="mc-second-title">Projects</h1>
+                <Projects />
             </div>
             <div id="contact" className="mc-contact-wrapper">
                 <ContactCard />

@@ -1,3 +1,14 @@
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-line {
+    background-color: rgb(59, 28, 197);
+    height: 10px;
+}
+
 .link-text:hover {
     text-decoration: none !important;
     color: rgb(84, 29, 236); 

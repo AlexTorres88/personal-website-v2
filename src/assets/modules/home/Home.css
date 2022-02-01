@@ -1,8 +1,9 @@
 /* Top container */
 
 .top-container-wrapper {
+    padding-top: 88px;
     background: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
-    min-height: 450px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,13 +66,12 @@
 }
 
 .mc-second-wrapper {
-    min-height: 450px;
+    padding: 40px 0;
     background-color: black;
     text-align: center;
 }
 
 .mc-second-title {
-    padding-top: 20px;
     color: white;
     font-size: 3rem;
     font-weight: 700;
@@ -90,5 +90,76 @@
 @media only screen and (min-width: 300px) {
     .mc-contact-wrapper {
         padding: 40px;
+    }
+}
+
+/* Projects */
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.project-card {
+    background-color: white;
+    text-align: justify;
+    padding: 15px 30px 15px 30px;
+    min-width: 240px;
+    max-width: 320px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    margin: 0 5px;
+}
+
+.project-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.project-card p {
+    margin: 20px 0;
+    font-size: large;
+    word-break: break-word;
+}
+
+.project-card button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: linear-gradient(to left, black 50%, rgb(40, 13, 194) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.project-card button:hover {
+    background-position: left;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-card {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .project-card {
+        padding-left: 35px;
+        min-width: 350px;
+    }
+    .projects-wrapper {
+        flex-direction: row;
     }
 }

@@ -12,21 +12,24 @@ const Navigation = (props) => {
 
       
     return (
-        <NavBarContainer {...props}>
-            <Logo
-                w="100px"
-                color={["white", "white", "white", "white"]}
-            />
-            <MenuToggle toggle={toggle} isOpen={isOpen} />
-            <MenuLinks isOpen={isOpen} />
-        </NavBarContainer>
+        <nav className="navbar">
+            <div className="nav-line"></div>
+            <NavBarContainer {...props}>
+                <Logo
+                    w="100px"
+                    color={["white", "white", "white", "white"]}
+                />
+                <MenuToggle toggle={toggle} isOpen={isOpen} />
+                <MenuLinks isOpen={isOpen} />
+            </NavBarContainer>
+        </nav>
     );
 };
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
         <HashLink smooth  className="link-text" to={to}>
-            <Text display="block" fontWeight="bold" {...rest}>
+            <Text fontSize={18} display="block" fontWeight="bold" {...rest}>
                 {children}
             </Text>
         </HashLink>
@@ -51,7 +54,7 @@ const MenuLinks = ({ isOpen }) => {
                 <MenuItem to="#projects">Projects </MenuItem>
                 <MenuItem to="#contact" isLast>
                     <Button
-                        size="sm"
+                        size="md"
                         rounded="md"
                         color={"black"}
                         bg={"white"}
@@ -71,12 +74,11 @@ const MenuLinks = ({ isOpen }) => {
 const NavBarContainer = ({ children, ...props }) => {
     return (
         <Flex
-            as="nav"
             align="center"
             justify="space-between"
             wrap="wrap"
             w="100%"
-            p={8}
+            p={6}
             bg={["black", "black", "black", "black"]}
             color={["white", "white", "white", "white"]}
             {...props}

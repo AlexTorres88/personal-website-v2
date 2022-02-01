@@ -1,10 +1,19 @@
 import React from 'react';
-import '../assets/components/ProjectCard.css'
+import '../assets/modules/home/Home.css'
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
     return (
-        <div className>   
-            
+        <div className="project-card">   
+            <h2>{props.title}</h2>
+            <p>{props.desc}</p>
+            <div className="image-container">
+                {props.icons.map((image) => {
+                    return (
+                        <img alt="technology-logo" src={image[0]} style={{height: image[1], width: image[0]}}/>
+                    );
+                })}
+            </div>
+            <a href={props.link} target="_blank" rel="noreferrer"><button>{props.btn}</button></a>
         </div>
     );
 }
