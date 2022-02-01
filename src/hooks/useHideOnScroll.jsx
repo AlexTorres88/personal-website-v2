@@ -7,6 +7,7 @@ export default function useHideOnScroll() {
     useEffect(() => {
         const onScroll = () => {
         setIsHidden(isHidden => {
+            if(window.scrollY == 0) return false;
             const scrolledDown = window.scrollY > prevScrollY.current;
             if (scrolledDown && !isHidden) {
                 return true;
