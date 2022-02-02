@@ -1,14 +1,16 @@
 import React from 'react';
 import '../../assets/modules/home/Home.css'
 import TopContainer from './TopContainer';
-import MiddleContainer from './MiddleContainer';
+import AboutContainer from './AboutContainer';
+import ProjectsContainer from './ProjectsContainer';
 import BottomContainer from './BottomContainer';
 
 const Home = () => {
     return (
         <div>
             <TopContainer/>
-            <MiddleContainer/>
+            <AboutContainer/>
+            <ProjectsContainer />
             {/* <BottomContainer />  */}
         </div>
     )
