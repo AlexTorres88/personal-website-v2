@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, Box, Stack, Flex, Button } from "@chakra-ui/react";
 import { HashLink } from 'react-router-hash-link';
 import useHideOnScroll from '../hooks/useHideOnScroll'

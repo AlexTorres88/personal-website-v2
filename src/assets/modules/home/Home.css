@@ -87,7 +87,7 @@
 
 .mc-second-wrapper {
     padding: 40px 0;
-    background-color: black;
+    background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
     text-align: center;
 }
 
