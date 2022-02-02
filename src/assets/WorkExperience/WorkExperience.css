@@ -22,7 +22,7 @@ left:0;
 right:0;
 bottom:0;
 padding: 4px;
-border-radius: 20px;
+border-radius: 10px;
 background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
 -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
@@ -57,7 +57,7 @@ mask-composite: exclude;
     margin: 10px 0;
     padding: 10px 20px;
     background-image: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     font-size: 1.5rem;
     font-weight: 800;

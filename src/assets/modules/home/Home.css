@@ -87,7 +87,7 @@
 
 .mc-second-wrapper {
     padding: 40px 0;
-    background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
+    background: black;
     text-align: center;
 }
 
@@ -181,5 +181,63 @@
     }
     .projects-wrapper {
         flex-direction: row;
+    }
+}
+
+/* Books */
+
+.books-container {
+    padding: 25px 20px;
+    min-height: 450px;
+    background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);;
+}
+
+.bc-title {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.book-card {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 15px auto;
+    min-width: 240px;
+    max-width: 450px;
+    height: 180px;
+    color: #313149;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 127, 127);
+}
+
+.book-description {
+    margin-left: 15px;
+}
+
+.book-title {
+    font-weight: 700;
+}
+
+.book-author {
+    color: rgb(167, 163, 162);
+}
+
+@media only screen and (max-width: 281px) {
+    .bc-title {
+        font-size: 1.5rem;
+    }
+    .book-card {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .bc-title {
+        font-size: 3rem;
     }
 }
