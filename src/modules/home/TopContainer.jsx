@@ -21,7 +21,7 @@ const TopContainer = () => {
     }
 
     useEffect(() => {
-        const timer = setTimeout(() => handleText(index + 1), 4000);
+        const timer = setTimeout(() => handleText(index + 1), 8000);
         return () => clearTimeout(timer);
       }, [index]);
 

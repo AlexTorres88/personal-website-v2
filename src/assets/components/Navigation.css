@@ -7,16 +7,16 @@
 }
 
 .navbar-active {
-    background-color: rgb(59, 28, 197);
+    background-color: rgb(0, 0, 0);
     color: white;
 }   
 
 .nav-line {
-    background: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
+    background: linear-gradient(to right, rgb(6, 34, 156) 50%, rgb(21, 198, 221));
     height: 16px;
 }
 
 .link-text:hover {
     text-decoration: none !important;
-    color: rgb(84, 29, 236); 
+    color: rgb(21, 198, 221); 
 }

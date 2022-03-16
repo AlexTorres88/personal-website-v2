@@ -1,7 +1,7 @@
 /* Top container */
 
 .top-container-wrapper {
-    background-color: black;
+    background: radial-gradient(circle, rgb(6, 34, 156) 20%, rgb(21, 198, 221));
     min-height: 450px;
     display: flex;
     justify-content: center;
@@ -24,9 +24,9 @@
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    rgb(218, 65, 5),
-    #ff1361 67%,
-    rgb(28, 40, 197) 100%
+    rgb(255, 255, 255),
+    #b9b9b8 50%,
+    rgb(0, 0, 0) 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -35,7 +35,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  animation: textclip 8s linear infinite;
   display: inline-block;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .mc-contact-wrapper {
-    background-image: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
+    background-image: radial-gradient(circle, rgb(6, 34, 156) 20%, rgb(21, 198, 221));
     text-align: center;
     padding: 5%;
 }
@@ -156,7 +156,7 @@
     margin-top: 20px;
     padding: 10px 30px;
     color: white;
-    background: linear-gradient(to left, black 50%, rgb(40, 13, 194) 50%) right;
+    background: linear-gradient(to left, black 50%, rgb(13, 91, 194) 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
     font-weight: 700;
@@ -189,7 +189,7 @@
 .books-container {
     padding: 25px 20px;
     min-height: 450px;
-    background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);;
+    background: linear-gradient(to right, rgb(6, 34, 156) 30%, rgb(21, 198, 221));
 }
 
 .bc-title {

@@ -23,7 +23,7 @@ right:0;
 bottom:0;
 padding: 4px;
 border-radius: 10px;
-background: radial-gradient(circle, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
+background: radial-gradient(circle, rgb(6, 34, 156), rgb(21, 198, 221));
 -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -56,7 +56,7 @@ mask-composite: exclude;
 .btn-resume {
     margin: 10px 0;
     padding: 10px 20px;
-    background-image: linear-gradient(to right, rgb(218, 65, 5) 0%, rgb(28, 40, 197) 100%);
+    background-image: linear-gradient(to right, rgb(6, 34, 156) 30%, rgb(21, 198, 221));
     border-radius: 10px;
     color: white;
     font-size: 1.5rem;
